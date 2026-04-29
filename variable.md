@@ -36,6 +36,7 @@ https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
 }
 ```
 1200px -> 1000px
+
 800px -> 800px
 ## min-height
 最低限の高さを得るときに使用。
@@ -54,7 +55,9 @@ minが200pxの場合、
 
 
 100px -> 200px
+
 200px -> 200px
+
 300px -> 300px 
 
 
@@ -82,5 +85,7 @@ maxは取りうる最大の値です。
 ```
 
 16px より小さくしない
+
 でも基本は 画面幅の 2%
+
 24px より大きくしない
