@@ -80,13 +80,16 @@ maxは取りうる最大の値です。
 ## clamp
 ```css
 .box{
-    font-size: clamp(16px, 2vw, 24px);
+    width: clamp(500px, 50%, 1500px);
 }
 ```
+三行バージョン
+```css
+.box{
+    width:50%;
+    min-width:500px;/*最小値*/
+    max-width:1500px;/*最大値*/
+}
+````
 
-16px より小さくしない
-
-でも基本は 画面幅の 2%
-
-24px より大きくしない
 
