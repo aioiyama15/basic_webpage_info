@@ -90,7 +90,20 @@ box-sizingとは最新のCSS規格「CSS3」から追加されたプロパティ
 ```
 https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
 
+## 単語の折り返し
 
+```css
+span.line-chunk {
+    display: inline-block;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
 
+```
 
-
+```html
+<span class="line-chunk">
+    <span class="line-chunk">文字列文字列文字列文字列</span>
+    <span class="line-chunk">文字列文字列文字列</span>
+</span>
+```
