@@ -13,23 +13,10 @@ padding、 marginのpxはいいですが、コンテンツの横幅、縦幅を�
 
 ## 正しい書き方
 
-## box-sizing
-box-sizingとは最新のCSS規格「CSS3」から追加されたプロパティです。このプロパティにより「要素の幅（width）と高さ（height）の中にpaddingとborderを含めるかどうか」という設定ができます。
-
-```css
-#borderbox p {
-  box-sizing: border-box;
-}
-```
-https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
-
-
-
 
 ## max-width
-取りうる最大値を設定します。
-画面の横幅が大きいときは、横幅を固定おきたいが、画面が小さい場合は本来の描画幅になる。
-
+max-widthは、コンテンツの横幅の最大の値を指定します。
+画面の横幅が大きいときは、横幅を1000px等で固定します。1000pxより小さくなると、コンテンツの横幅が、画面に合わせて小さくなります。
 ```css
 .box{
     max-width:1000px;
@@ -39,7 +26,7 @@ https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
 
 800px -> 800px
 ## min-height
-最低限の高さを得るときに使用。
+最低限の高さを指定したいときに使う。
 
 ```css
 .box{
@@ -49,7 +36,7 @@ https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
     min-height:200px;
 }
 ```
-ウィンドウの高さ分は最低確保する場合は、100vhを使用します。
+ウィンドウの高さ分を最低確保する場合は、100vhを使用します。
 
 minが200pxの場合、
 
@@ -90,6 +77,20 @@ maxは取りうる最大の値です。
     min-width:500px;/*最小値*/
     max-width:1500px;/*最大値*/
 }
-````
+```
+
+
+## box-sizing
+box-sizingとは最新のCSS規格「CSS3」から追加されたプロパティです。このプロパティにより「要素の幅（width）と高さ（height）の中にpaddingとborderを含めるかどうか」という設定ができます。
+
+```css
+#borderbox p {
+  box-sizing: border-box;
+}
+```
+https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
+
+
+
 
 
