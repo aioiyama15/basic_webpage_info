@@ -2,8 +2,11 @@
 
 ## NGなスタイルの書き方
 
-```style
+```css
+.box{
     width:1366px;
+}
+   
 ```
 widthを固定すると、画面サイズを変更したときに追従しません。
 padding、 marginのpxはいいですが、コンテンツの横幅、縦幅を固定するような書き方はよくないです。
@@ -11,12 +14,17 @@ padding、 marginのpxはいいですが、コンテンツの横幅、縦幅を�
 ## box-sizing
 box-sizingとは最新のCSS規格「CSS3」から追加されたプロパティです。このプロパティにより「要素の幅（width）と高さ（height）の中にpaddingとborderを含めるかどうか」という設定ができます。
 
+```css
+#borderbox p {
+  box-sizing: border-box;
+}
+```
 https://saruwakakun.com/html-css/reference/box-sizing#google_vignette
 
 ## min-width
 画面の横幅が大きいときは、横幅を小さくしておきたいが、画面が小さい場合は追従したい
 
-```style
+```css
 .box{
     min-width:1000px
 }
