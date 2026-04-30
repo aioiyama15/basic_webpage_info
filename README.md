@@ -5,3 +5,5 @@
 [可変レイアウト](/variable.md)
 
 [レイアウト基本](/layout.md)
+
+[その他](/info.md)
