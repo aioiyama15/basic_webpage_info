@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test_01 {
+            display: block;
+            width: 100%;
+        }
+
+        .test_03 {
+            display: flex;
+        }
+
+        .test_03 input {
+            flex: 1;
+            /* 残りのスペースを占める */
+
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text" class="test_01">
+    <div class="test_02">
+        <label for="">あいうえお</label><input type="text">
+    </div>
+    <div class="test_03">
+        <label for="">あいうえお</label><input type="text">
+    </div>
+</body>
+
+</html>
