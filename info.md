@@ -27,3 +27,9 @@ fn key + F7
 ### 半角カタカナ
 
 fn key + F8
+
+## ページの特定要素に飛ばしたい
+
+index.html?status=success#form
+
+末尾に#id名をつけてください
