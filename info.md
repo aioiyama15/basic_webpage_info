@@ -33,3 +33,24 @@ fn key + F8
 index.html?status=success#form
 
 末尾に#id名をつけてください
+
+## ウェブサイト画像で保存したい
+
+Ctrl + shift + i　検証ツール表示
+
+Ctrl + shift + p　検索画面出る
+
+Cap　を入力
+
+fullsize capture
+
+### PDFで保存
+
+印刷
+
+PDFで保存
+
+大体サイドバーがいらないところに重なったりしているので検証でクリックして消してしまうことをお勧めします。
+
+選択後、DELETE
+
