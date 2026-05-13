@@ -48,3 +48,44 @@ inline要素のみ（div等）
 [文字要素]　[空白div] [　写真　]
 ```
 入れ替わりのないレイアウトには不要。
+
+## 枠の中にスライドを作成するテクニック
+
+### 概要
+- 枠、スライダーを重ねる
+- 枠とスライドのサイズを一緒に変化させる
+- スライドの中の画像サイズが違う場合でも同じ枠の中に画像をキレイに表示する。
+
+以下のCSSのよってそれを実現する。
+```css
+.main_section .swiper,
+.main_section .swiper-wrapper,
+.main_section .swiper-slide {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.frame {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 2;
+
+}
+
+
+.main_section .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+```
+
+aspect-ratio によって、画像の縦横比率を保つ。
+タブレットとスマホは、画像サイズをそのまま参照している。
+比率なので、画像のpx数をそのまま書いても問題ないです。
