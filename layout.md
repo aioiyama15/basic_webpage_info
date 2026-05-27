@@ -89,3 +89,106 @@ inline要素のみ（div等）
 aspect-ratio によって、画像の縦横比率を保つ。
 タブレットとスマホは、画像サイズをそのまま参照している。
 比率なので、画像のpx数をそのまま書いても問題ないです。
+
+
+## リスト
+
+手順を書くような場合のリストCSS
+
+
+
+```css
+
+
+ ul,
+ li {
+     font-size: pc(17);
+     line-height: 2.0;
+     //  list-style: inside;
+     /* 先頭の黒点を消す */
+     padding: 0;
+     /* 内側の余白を消す */
+     margin: 0;
+     /* 外側の余白を消す */
+ }
+
+
+ .process {
+     margin-left: pc(50px);
+ }
+
+ .process>li {
+     position: relative;
+ }
+
+ .process>li::before {
+     position: absolute;
+     left: pc(-40);
+     top: pc(5);
+     width: pc(30);
+     height: pc(30);
+     display: grid;
+     place-items: center;
+     background-color: #005726;
+     color: #fff;
+     font-size: pc(20);
+     content: "";
+     line-height: 0;
+     font-weight: bold;
+ }
+
+ .process>#process_num_1::before {
+     content: "1";
+ }
+
+ .process>#process_num_2::before {
+     content: "2";
+ }
+
+ /* spanの vertical-align は不要になるので削除かリセット */
+ li>span {
+     vertical-align: baseline;
+ }
+
+```
+
+```html
+
+ <ul class="process">
+    <li id="process_num_1">
+        <h3>サンプル</h3>
+        <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+        </p>
+    </li>
+    <li id="process_num_2">
+        <h3>サンプル</h3>
+        <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+        </p>
+        <h3>サンプルサンプルサンプルサンプルサンプルサンプルサンプル</h3>
+        <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+        </p>
+        
+        <div class="signal_list" style="display: flex;">
+            <ul>
+                <li class="green_list"><span>サンプル</span></li>
+                <li class="green_list"><span>サンプル</span></li>
+                <li class="green_list"><span>サンプル</span></li>
+                <li class="green_list"><span>サンプル</span></li>
+            </ul>
+            <ul>
+                <li class="green_list"><span>サンプル</span></li>
+                <li class="green_list"><span>サンプル</span></li>
+                <li class="green_list"><span>サンプル</span></li>
+            </ul>
+        </div>
+        <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+        </p>
+
+        <h3>サンプルサンプルサンプル</h3>
+        <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+        </p>
+    </li>
+
+</ul>
+
+```
