@@ -26,4 +26,9 @@ letter-spacingを指定する際、「em」で指定することが適切です�
 ### パーセントからem変換
 2%  -> 0.02em
 
-
+## 蛍光マーカーのような表現
+```css
+section .y_marker {
+    background: linear-gradient(transparent 60%, #FFF9C3 60%);
+}
+```
