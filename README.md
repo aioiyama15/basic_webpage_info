@@ -12,5 +12,7 @@
 
 [文字に対しての装飾](/word.md)
 
+[SASS](/sass.md)
+
 [その他](/info.md)
 
